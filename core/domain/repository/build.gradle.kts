@@ -18,17 +18,17 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "seerCore"
+            baseName = "seerCoreDomainRepository"
         }
     }
 
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(project(":core:domain"))
+                api(project(":core:domain:model"))
             }
         }
-
+        
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
@@ -58,7 +58,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.attafitamim.seer.core"
+    namespace = "com.attafitamim.seer.core.domain.repository"
     compileSdk = 33
     defaultConfig {
         minSdk = 21
