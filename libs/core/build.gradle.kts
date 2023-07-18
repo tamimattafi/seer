@@ -8,7 +8,6 @@ plugins {
 kotlin {
     targetHierarchy.default()
 
-    jvm("desktop")
     android()
     ios()
 
