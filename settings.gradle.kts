@@ -13,7 +13,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Seer"
-include(":androidSample")
-include(":core")
-include(":core:domain")
+rootProject.name = "seer"
+include(":sample:androidApp")
+include(":sample:desktopApp")
+include(":sample:shared")
+include(":libs:core")

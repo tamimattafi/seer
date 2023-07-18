@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.library).apply(false)
     alias(libs.plugins.kotlin.android).apply(false)
     alias(libs.plugins.kotlin.multiplatform).apply(false)
+    id("org.jetbrains.compose").version("1.4.1").apply(false)
 }
 
 tasks.register("clean", Delete::class) {
